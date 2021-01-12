@@ -3,7 +3,7 @@ USE codeup_test_db;
 -- SELECT * FROM albums;
 --
 -- UPDATE albums
--- SET sales = sales*10;
+-- SET sales = (sales * 10);
 
 --
 -- SELECT sales FROM albums;
