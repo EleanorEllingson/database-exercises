@@ -4,7 +4,7 @@ SELECT name AS 'The name of all albums by Pink Floyd';
 FROM albums
 WHERE artist = 'Pink Floyd';
 
-SELECT release_date AS 'The release date of all albums from Sgt. Peppers Lonely Hearts Club Band' '';
+SELECT release_date AS 'The release date of all albums from Sgt. Pepper''s Lonely Hearts Club Band';
 FROM albums
 WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
 
