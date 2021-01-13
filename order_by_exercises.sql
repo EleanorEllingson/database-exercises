@@ -1,8 +1,24 @@
 USE employees;
 
-SELECT *
+SELECT first_name, last_name
 FROM employees
-WHERE first_name IN ('Irena', 'Vidya', 'Maya');
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name;
+
+SELECT first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name, last_name;
+
+SELECT first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY last_name, first_name;
+
+SELECT first_name, last_name
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY last_name  DESC, first_name;
 
 SELECT *
 FROM employees
@@ -41,13 +57,14 @@ WHERE (last_name LIKE 'E%')
 
 SELECT *
 FROM employees
-WHERE last_name LIKE 'E%' AND last_name LIKE '%E';
+WHERE last_name LIKE 'E%' AND last_name LIKE '%E'
+ORDER BY emp_no DESC;
 
 SELECT *
 FROM employees
-WHERE hire_date between
-    CAST('1990-01-01' AS DATE) and CAST('1999-12-31' AS DATE)
-  AND birth_date LIKE '%12-25';
+WHERE hire_date between '1990-01-01' and '1999-12-31'
+  AND birth_date LIKE '%12-25'
+ORDER BY hire_date DESC, birth_date DESC;
 
 SELECT *
 FROM employees
