@@ -60,7 +60,7 @@ FROM employees
 WHERE last_name LIKE 'E%E'
 ORDER BY emp_no DESC;
 
-SELECT DATEDIFF(NOW(), hire_date)
+SELECT first_name, last_name, DATEDIFF(NOW(), hire_date)
 FROM employees
 WHERE hire_date between '1990-01-01' and '1999-12-31'
   AND birth_date LIKE '%12-25'
