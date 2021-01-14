@@ -11,3 +11,9 @@ CREATE TABLE albums (
                         genre VARCHAR(100),
                         PRIMARY KEY (id)
 );
+
+
+DESCRIBE albums;
+
+ALTER TABLE albums
+    ADD UNIQUE unique_nms_arts (name, artist);

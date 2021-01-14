@@ -14,6 +14,10 @@ VALUES ('Bruce Springsteen', 'Born In The USA', 1984, 'Rock', 87.2);
 INSERT INTO albums (artist, name, release_date, genre, sales)
 VALUES ('Billy Joel', 'Piano Man', 1979, 'Rock', 46.8);
 
+INSERT INTO albums (artist, name, release_date, genre, sales)
+VALUES ('Billy Joel', 'Piano Man', 1979, 'Rock', 46.8);
+
+
 
 INSERT INTO albums (artist, name, release_date, genre, sales)
 values ('Michael Jackson', 'Thriller', 1982, 'Pop, Rock, R&B', 47.3),

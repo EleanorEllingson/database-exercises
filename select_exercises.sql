@@ -24,3 +24,4 @@ WHERE sales < 20;
 SELECT name AS 'All Rock albums'
 FROM albums
 WHERE genre = 'Rock';
+

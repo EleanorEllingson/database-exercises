@@ -138,3 +138,5 @@ FROM employees
 GROUP BY hire_date
 ORDER BY number_hired DESC
 LIMIT 10;
+
+DESCRIBE titles;
