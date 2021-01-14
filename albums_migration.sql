@@ -16,4 +16,4 @@ CREATE TABLE albums (
 DESCRIBE albums;
 
 ALTER TABLE albums
-    ADD UNIQUE unique_nms_arts (name, artist);
+    ADD UNIQUE(name, artist);
