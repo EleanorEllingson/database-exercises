@@ -1,0 +1,28 @@
+USE ad_lister;
+
+CREATE TABLE IF NOT EXISTS users (
+     id INT UNSIGNED AUTO_INCREMENT NOT NULL,
+     email VARCHAR(100) NOT NULL,
+     password VARCHAR(150) NOT NULL,
+     PRIMARY KEY(id)
+);
+CREATE TABLE IF NOT EXISTS ads (
+   id INT UNSIGNED AUTO_INCREMENT NOT NULL,
+   title VARCHAR(255) NOT NULL,
+   description VARCHAR(255),
+   user_id INT UNSIGNED NOT NULL,
+   PRIMARY KEY (id),
+   FOREIGN KEY (user_id) REFERENCES users (id)
+);
+CREATE TABLE IF NOT EXISTS categories (
+      id INT UNSIGNED AUTO_INCREMENT NOT NULL,
+      category VARCHAR(255) NOT NULL,
+      PRIMARY KEY (id)
+);
+CREATE TABLE ad_category (
+     ad_id INTEGER UNSIGNED NOT NULL,
+     category_id INTEGER UNSIGNED NOT NULL,
+     FOREIGN KEY (ad_id) REFERENCES ads(id),
+     FOREIGN KEY (category_id) REFERENCES categories(id)
+);
+
