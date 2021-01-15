@@ -40,6 +40,5 @@ WHERE dm.to_date > NOW()
 AND s.to_date > NOW()
 ORDER BY d.dept_name;
 
-WHERE  dm.to_date > NOW()
-AND
+
 
